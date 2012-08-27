@@ -20,6 +20,7 @@
     
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:1];
+    [UIView setAnimationBeginsFromCurrentState:YES];
     
     self.caixa.center = point;
     
