@@ -13,6 +13,7 @@
 		12560C8815EC32510099BAF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12560C8615EC32510099BAF3 /* InfoPlist.strings */; };
 		12560C8A15EC32510099BAF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12560C8915EC32510099BAF3 /* main.m */; };
 		12560C8E15EC32510099BAF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12560C8D15EC32510099BAF3 /* AppDelegate.m */; };
+		1272466715EC338F00EA79C4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1272466615EC338F00EA79C4 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		12560C8B15EC32510099BAF3 /* Touch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Touch-Prefix.pch"; sourceTree = "<group>"; };
 		12560C8C15EC32510099BAF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		12560C8D15EC32510099BAF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1272466615EC338F00EA79C4 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				12560C8C15EC32510099BAF3 /* AppDelegate.h */,
 				12560C8D15EC32510099BAF3 /* AppDelegate.m */,
 				12560C8415EC32510099BAF3 /* Supporting Files */,
+				1272466615EC338F00EA79C4 /* Storyboard.storyboard */,
 			);
 			path = Touch;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12560C8815EC32510099BAF3 /* InfoPlist.strings in Resources */,
+				1272466715EC338F00EA79C4 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +265,7 @@
 				12560C9315EC32510099BAF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
