@@ -10,12 +10,17 @@
 
 @implementation FundoView
 
+@synthesize coordenadas;
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self];
     
-    NSLog(@"%0.0f x %0.0f", point.x, point.y);
+    NSString *texto = [NSString stringWithFormat:@"%0.0f x %0.0f", point.x, point.y];
+    self.coordenadas.text = texto;
+    
+    NSLog(@"%@", texto);
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event

@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ruq-zz-mtJ">
-                                <rect key="frame" x="139" y="419" width="42" height="21"/>
+                                <rect key="frame" x="97" y="419" width="127" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -23,6 +23,9 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="coordenadas" destination="ruq-zz-mtJ" id="lOH-pk-tx1"/>
+                        </connections>
                     </view>
                 </viewController>
             </objects>
@@ -32,6 +35,9 @@
     <classes>
         <class className="FundoView" superclassName="UIView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FundoView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="coordenadas" candidateClass="UILabel"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -10,4 +10,6 @@
 
 @interface FundoView : UIView
 
+@property (weak, nonatomic) IBOutlet UILabel *coordenadas;
+
 @end
