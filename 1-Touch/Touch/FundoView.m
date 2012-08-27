@@ -18,7 +18,12 @@
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self];
     
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:1];
+    
     self.caixa.center = point;
+    
+    [UIView commitAnimations];
     
     NSString *texto = [NSString stringWithFormat:@"%0.0f x %0.0f", point.x, point.y];
     self.coordenadas.text = texto;
