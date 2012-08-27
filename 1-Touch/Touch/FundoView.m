@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Cleverson Sacramento. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
 #import "FundoView.h"
 
 @implementation FundoView
@@ -29,6 +30,7 @@
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self];
     
+    self.caixa.layer.cornerRadius = 20;
     self.caixa.center = point;
     
     NSString *texto = [NSString stringWithFormat:@"%0.0f x %0.0f", point.x, point.y];
