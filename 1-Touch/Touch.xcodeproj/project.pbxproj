@@ -14,6 +14,7 @@
 		12560C8A15EC32510099BAF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12560C8915EC32510099BAF3 /* main.m */; };
 		12560C8E15EC32510099BAF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12560C8D15EC32510099BAF3 /* AppDelegate.m */; };
 		1272466715EC338F00EA79C4 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1272466615EC338F00EA79C4 /* Storyboard.storyboard */; };
+		1272466B15EC34F700EA79C4 /* FundoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1272466A15EC34F700EA79C4 /* FundoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		12560C8C15EC32510099BAF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		12560C8D15EC32510099BAF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1272466615EC338F00EA79C4 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		1272466915EC34F700EA79C4 /* FundoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundoView.h; sourceTree = "<group>"; };
+		1272466A15EC34F700EA79C4 /* FundoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundoView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				12560C8D15EC32510099BAF3 /* AppDelegate.m */,
 				12560C8415EC32510099BAF3 /* Supporting Files */,
 				1272466615EC338F00EA79C4 /* Storyboard.storyboard */,
+				1272466915EC34F700EA79C4 /* FundoView.h */,
+				1272466A15EC34F700EA79C4 /* FundoView.m */,
 			);
 			path = Touch;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			files = (
 				12560C8A15EC32510099BAF3 /* main.m in Sources */,
 				12560C8E15EC32510099BAF3 /* AppDelegate.m in Sources */,
+				1272466B15EC34F700EA79C4 /* FundoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

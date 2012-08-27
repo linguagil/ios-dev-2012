@@ -10,9 +10,18 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xeQ-41-XRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="4Al-uO-TCA" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="a2T-bf-LL1">
+                    <view key="view" contentMode="scaleToFill" id="a2T-bf-LL1" customClass="FundoView">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="x" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ruq-zz-mtJ">
+                                <rect key="frame" x="139" y="419" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -20,6 +29,11 @@
             <point key="canvasLocation" x="72" y="58"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="FundoView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FundoView.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
