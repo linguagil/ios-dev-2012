@@ -15,26 +15,26 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    UITouch *touch = [touches anyObject];
-    CGPoint point = [touch locationInView:self];
-    
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:1];
     [UIView setAnimationBeginsFromCurrentState:YES];
     
-    self.caixa.center = point;
+    [self touchesMoved:touches withEvent:event];
     
     [UIView commitAnimations];
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    CGPoint point = [touch locationInView:self];
+    
+    self.caixa.center = point;
     
     NSString *texto = [NSString stringWithFormat:@"%0.0f x %0.0f", point.x, point.y];
     self.coordenadas.text = texto;
     
     NSLog(@"%@", texto);
-}
-
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    [self touchesBegan:touches withEvent:event];
 }
 
 @end
