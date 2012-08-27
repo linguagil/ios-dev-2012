@@ -11,11 +11,14 @@
 @implementation FundoView
 
 @synthesize coordenadas;
+@synthesize caixa;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self];
+    
+    self.caixa.center = point;
     
     NSString *texto = [NSString stringWithFormat:@"%0.0f x %0.0f", point.x, point.y];
     self.coordenadas.text = texto;

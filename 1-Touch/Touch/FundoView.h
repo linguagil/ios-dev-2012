@@ -11,5 +11,6 @@
 @interface FundoView : UIView
 
 @property (weak, nonatomic) IBOutlet UILabel *coordenadas;
+@property (weak, nonatomic) IBOutlet UIView *caixa;
 
 @end
