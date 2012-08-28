@@ -26,6 +26,12 @@
     return self;
 }
 
+- (NSString *)itemSelecionado
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    return indexPath ? [_lista objectAtIndex:indexPath.row] : nil;
+}
+
 - (void)carregarLista
 {
     _lista = [[NSMutableArray alloc] init];
@@ -88,12 +94,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     DetalheViewController *controller = (DetalheViewController *) segue.destinationViewController;
-    
-    if([segue.identifier isEqualToString:@"Novo"]) {
-        controller.item = nil;
-    } else {
-        controller.item = [_lista objectAtIndex:self.tableView.indexPathForSelectedRow.row];
-    }
+    controller.delegate = self;
 }
 
 /*

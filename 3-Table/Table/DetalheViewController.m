@@ -14,6 +14,7 @@
 
 @implementation DetalheViewController
 
+@synthesize delegate;
 @synthesize campo;
 @synthesize label;
 
@@ -36,9 +37,9 @@
 {
     [super viewDidLoad];
     
-    if(self.item) {
+    if([self.delegate itemSelecionado]) {
         self.title = @"Detalhe";
-        self.label.text = self.item;
+        self.label.text = [self.delegate itemSelecionado];
         self.campo.hidden = YES;
 
     } else {
@@ -52,7 +53,6 @@
 
 - (void)viewDidUnload
 {
-    _item = nil;
     [self setLabel:nil];
     [self setCampo:nil];
     [super viewDidUnload];

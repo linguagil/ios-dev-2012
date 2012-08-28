@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetalheViewController.h"
 
-@interface TabelaViewController : UITableViewController {
+@interface TabelaViewController : UITableViewController <DetalheDelegate> {
     NSMutableArray *_lista;
 }
 
