@@ -83,15 +83,15 @@
 		127308CB15EC539700665551 /* Gesture */ = {
 			isa = PBXGroup;
 			children = (
-				12E6EB8915ECFD030063D60A /* home-icon.png */,
-				12E6EB8A15ECFD030063D60A /* lab-icon.png */,
-				12E6EB8B15ECFD030063D60A /* puzzle-icon.png */,
 				127308D415EC539700665551 /* AppDelegate.h */,
 				127308D515EC539700665551 /* AppDelegate.m */,
 				127308CC15EC539700665551 /* Supporting Files */,
 				127308DC15EC53A200665551 /* Storyboard.storyboard */,
 				127308DE15EC541D00665551 /* GestureViewController.h */,
 				127308DF15EC541D00665551 /* GestureViewController.m */,
+				12E6EB8915ECFD030063D60A /* home-icon.png */,
+				12E6EB8A15ECFD030063D60A /* lab-icon.png */,
+				12E6EB8B15ECFD030063D60A /* puzzle-icon.png */,
 			);
 			path = Gesture;
 			sourceTree = "<group>";
