@@ -7,4 +7,7 @@
    <FileRef
       location = "group:2-Gesture/Gesture.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:3-Table/Table.xcodeproj">
+   </FileRef>
 </Workspace>
