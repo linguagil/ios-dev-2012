@@ -13,6 +13,8 @@
 @end
 
 @implementation DetalheViewController
+
+@synthesize campo;
 @synthesize label;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -24,6 +26,14 @@
     return self;
 }
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.navigationController popViewControllerAnimated:YES];
+    NSLog(@"%@", self.campo.text);
+    
+    return YES;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,10 +41,12 @@
     if(self.item) {
         self.title = @"Detalhe";
         self.label.text = self.item;
+        self.campo.hidden = YES;
 
     } else {
         self.title = @"Novo";
         self.label.hidden = YES;
+        [self.campo becomeFirstResponder];
     }
     
 	// Do any additional setup after loading the view.
@@ -42,7 +54,9 @@
 
 - (void)viewDidUnload
 {
+    _item = nil;
     [self setLabel:nil];
+    [self setCampo:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }

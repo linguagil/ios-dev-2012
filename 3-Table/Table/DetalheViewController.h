@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetalheViewController : UIViewController
+@interface DetalheViewController : UIViewController <UITextFieldDelegate>
 
 @property NSString* item;
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UITextField *campo;
 
 @end
