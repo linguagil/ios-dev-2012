@@ -28,7 +28,14 @@
 {
     [super viewDidLoad];
     
-    self.label.text = self.item;
+    if(self.item) {
+        self.title = @"Detalhe";
+        self.label.text = self.item;
+
+    } else {
+        self.title = @"Novo";
+        self.label.hidden = YES;
+    }
     
 	// Do any additional setup after loading the view.
 }
