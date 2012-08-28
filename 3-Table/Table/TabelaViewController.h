@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TabelaViewController : UITableViewController
+@interface TabelaViewController : UITableViewController {
+    NSMutableArray *_lista;
+}
 
 @end

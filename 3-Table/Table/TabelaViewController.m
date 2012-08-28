@@ -10,6 +10,8 @@
 
 @interface TabelaViewController ()
 
+- (void)carregarLista;
+
 @end
 
 @implementation TabelaViewController
@@ -23,9 +25,19 @@
     return self;
 }
 
+- (void)carregarLista
+{
+    _lista = [[NSMutableArray alloc] init];
+    [_lista addObject:@"LinguÁgil 2012"];
+    [_lista addObject:@"iOS Dev Bahia"];
+    [_lista addObject:@"UCSal"];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    [self carregarLista];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -37,6 +49,9 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+
+    _lista = nil;
+
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -50,16 +65,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return _lista.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,7 +78,7 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    // Configure the cell...
+    cell.textLabel.text = [_lista objectAtIndex:indexPath.row];
     
     return cell;
 }
