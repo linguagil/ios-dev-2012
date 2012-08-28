@@ -13,6 +13,8 @@
 		12E5932215EC4AF40022490D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12E5932015EC4AF40022490D /* InfoPlist.strings */; };
 		12E5932415EC4AF40022490D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E5932315EC4AF40022490D /* main.m */; };
 		12E5932815EC4AF50022490D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E5932715EC4AF50022490D /* AppDelegate.m */; };
+		12E5933915EC4B890022490D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E5933615EC4B890022490D /* Storyboard.storyboard */; };
+		12E5933A15EC4B890022490D /* FundoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E5933715EC4B890022490D /* FundoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		12E5932515EC4AF40022490D /* Gesture-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gesture-Prefix.pch"; sourceTree = "<group>"; };
 		12E5932615EC4AF50022490D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		12E5932715EC4AF50022490D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		12E5933615EC4B890022490D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		12E5933715EC4B890022490D /* FundoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundoView.m; sourceTree = "<group>"; };
+		12E5933815EC4B890022490D /* FundoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundoView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +77,9 @@
 		12E5931D15EC4AF40022490D /* Gesture */ = {
 			isa = PBXGroup;
 			children = (
+				12E5933615EC4B890022490D /* Storyboard.storyboard */,
+				12E5933715EC4B890022490D /* FundoView.m */,
+				12E5933815EC4B890022490D /* FundoView.h */,
 				12E5932615EC4AF50022490D /* AppDelegate.h */,
 				12E5932715EC4AF50022490D /* AppDelegate.m */,
 				12E5931E15EC4AF40022490D /* Supporting Files */,
@@ -142,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E5932215EC4AF40022490D /* InfoPlist.strings in Resources */,
+				12E5933915EC4B890022490D /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +163,7 @@
 			files = (
 				12E5932415EC4AF40022490D /* main.m in Sources */,
 				12E5932815EC4AF50022490D /* AppDelegate.m in Sources */,
+				12E5933A15EC4B890022490D /* FundoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +271,7 @@
 				12E5932D15EC4AF50022490D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
