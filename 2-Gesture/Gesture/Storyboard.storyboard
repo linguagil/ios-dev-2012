@@ -21,6 +21,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="XlE-QJ-Qp4" appends="YES" id="mS9-8X-aGO"/>
+                                    <outletCollection property="gestureRecognizers" destination="G8E-ca-3dn" appends="YES" id="KDt-uE-lTf"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -35,10 +36,24 @@
                         <action selector="pincou:" destination="GQX-es-dYv" id="2yO-vU-VFb"/>
                     </connections>
                 </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="G8E-ca-3dn">
+                    <connections>
+                        <action selector="girou:" destination="GQX-es-dYv" id="1nz-ZV-pqZ"/>
+                    </connections>
+                </rotationGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="58" y="69"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="GestureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GestureViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pincou:" candidateClass="UIPinchGestureRecognizer"/>
+                <relationship kind="outlet" name="caixa" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

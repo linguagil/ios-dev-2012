@@ -24,6 +24,13 @@
     sender.scale = 1;
 }
 
+- (IBAction)girou:(UIRotationGestureRecognizer *)sender {
+    CGAffineTransform transform = CGAffineTransformRotate(sender.view.transform, sender.rotation);
+    self.caixa.transform = transform;
+    
+    sender.rotation = 0;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIView *caixa;
 
 - (IBAction)pincou:(UIPinchGestureRecognizer *)sender;
+- (IBAction)girou:(UIRotationGestureRecognizer *)sender;
 
 @end
