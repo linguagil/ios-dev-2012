@@ -14,6 +14,7 @@
 		12E6EBAC15ED028B0063D60A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E6EBAB15ED028B0063D60A /* main.m */; };
 		12E6EBB015ED028B0063D60A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E6EBAF15ED028B0063D60A /* AppDelegate.m */; };
 		12E6EBBB15ED02DB0063D60A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E6EBBA15ED02DB0063D60A /* Storyboard.storyboard */; };
+		12E6EBC815ED12810063D60A /* TabelaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E6EBC715ED12810063D60A /* TabelaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		12E6EBAE15ED028B0063D60A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		12E6EBAF15ED028B0063D60A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		12E6EBBA15ED02DB0063D60A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		12E6EBC615ED12810063D60A /* TabelaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabelaViewController.h; sourceTree = "<group>"; };
+		12E6EBC715ED12810063D60A /* TabelaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabelaViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				12E6EBAF15ED028B0063D60A /* AppDelegate.m */,
 				12E6EBA615ED028B0063D60A /* Supporting Files */,
 				12E6EBBA15ED02DB0063D60A /* Storyboard.storyboard */,
+				12E6EBC615ED12810063D60A /* TabelaViewController.h */,
+				12E6EBC715ED12810063D60A /* TabelaViewController.m */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			files = (
 				12E6EBAC15ED028B0063D60A /* main.m in Sources */,
 				12E6EBB015ED028B0063D60A /* AppDelegate.m in Sources */,
+				12E6EBC815ED12810063D60A /* TabelaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
