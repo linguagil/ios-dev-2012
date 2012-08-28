@@ -12,6 +12,7 @@
 @interface TabelaViewController ()
 
 - (void)carregarLista;
+- (void)persistirItem:(NSString *)item;
 
 @end
 
@@ -30,6 +31,19 @@
 {
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     return indexPath ? [_lista objectAtIndex:indexPath.row] : nil;
+}
+
+- (void)adicionarItem:(NSString *)item
+{
+    [self persistirItem:item];
+
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:YES];
+}
+
+- (void)persistirItem:(NSString *)item
+{
+    [_lista insertObject:item atIndex:0];
 }
 
 - (void)carregarLista

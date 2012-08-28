@@ -10,7 +10,8 @@
 
 @protocol DetalheDelegate <NSObject>
 
-- (NSString *) itemSelecionado;
+- (NSString *)itemSelecionado;
+- (void)adicionarItem:(NSString *)item;
 
 @end
 

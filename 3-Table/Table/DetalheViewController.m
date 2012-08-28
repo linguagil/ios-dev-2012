@@ -30,6 +30,8 @@
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [self.navigationController popViewControllerAnimated:YES];
+    [self.delegate adicionarItem:self.campo.text];
+    
     return YES;
 }
 
