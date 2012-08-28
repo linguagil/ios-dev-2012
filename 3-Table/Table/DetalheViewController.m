@@ -29,8 +29,6 @@
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [self.navigationController popViewControllerAnimated:YES];
-    NSLog(@"%@", self.campo.text);
-    
     return YES;
 }
 
