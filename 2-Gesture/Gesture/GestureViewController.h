@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GestureViewController : UIViewController
+@interface GestureViewController : UIViewController <UIGestureRecognizerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *caixa;
 
