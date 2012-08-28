@@ -10,6 +10,8 @@
 
 @interface GestureViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *caixa;
+
 - (IBAction)pincou:(UIPinchGestureRecognizer *)sender;
 
 @end

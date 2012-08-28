@@ -14,6 +14,16 @@
 
 @implementation GestureViewController
 
+@synthesize caixa;
+
+- (IBAction)pincou:(UIPinchGestureRecognizer *)sender {
+
+    CGAffineTransform transform = CGAffineTransformScale(sender.view.transform, sender.scale, sender.scale);
+    self.caixa.transform = transform;
+    
+    sender.scale = 1;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -31,6 +41,7 @@
 
 - (void)viewDidUnload
 {
+    [self setCaixa:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -38,10 +49,6 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (IBAction)pincou:(UIPinchGestureRecognizer *)sender {
-    NSLog(@"%f", sender.scale);
 }
 
 @end

@@ -26,6 +26,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="caixa" destination="Ogb-89-DWK" id="5eE-4E-Xva"/>
+                    </connections>
                 </viewController>
                 <pinchGestureRecognizer id="XlE-QJ-Qp4">
                     <connections>
