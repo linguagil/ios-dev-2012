@@ -15,6 +15,9 @@
 		127308D615EC539700665551 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 127308D515EC539700665551 /* AppDelegate.m */; };
 		127308DD15EC53A200665551 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127308DC15EC53A200665551 /* Storyboard.storyboard */; };
 		127308E015EC541D00665551 /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 127308DF15EC541D00665551 /* GestureViewController.m */; };
+		12E6EB8C15ECFD030063D60A /* home-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E6EB8915ECFD030063D60A /* home-icon.png */; };
+		12E6EB8D15ECFD030063D60A /* lab-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E6EB8A15ECFD030063D60A /* lab-icon.png */; };
+		12E6EB8E15ECFD030063D60A /* puzzle-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 12E6EB8B15ECFD030063D60A /* puzzle-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		127308DC15EC53A200665551 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		127308DE15EC541D00665551 /* GestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
 		127308DF15EC541D00665551 /* GestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
+		12E6EB8915ECFD030063D60A /* home-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home-icon.png"; path = "Images/home-icon.png"; sourceTree = SOURCE_ROOT; };
+		12E6EB8A15ECFD030063D60A /* lab-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lab-icon.png"; path = "Images/lab-icon.png"; sourceTree = SOURCE_ROOT; };
+		12E6EB8B15ECFD030063D60A /* puzzle-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "puzzle-icon.png"; path = "Images/puzzle-icon.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 		127308CB15EC539700665551 /* Gesture */ = {
 			isa = PBXGroup;
 			children = (
+				12E6EB8915ECFD030063D60A /* home-icon.png */,
+				12E6EB8A15ECFD030063D60A /* lab-icon.png */,
+				12E6EB8B15ECFD030063D60A /* puzzle-icon.png */,
 				127308D415EC539700665551 /* AppDelegate.h */,
 				127308D515EC539700665551 /* AppDelegate.m */,
 				127308CC15EC539700665551 /* Supporting Files */,
@@ -151,6 +160,9 @@
 			files = (
 				127308D015EC539700665551 /* InfoPlist.strings in Resources */,
 				127308DD15EC53A200665551 /* Storyboard.storyboard in Resources */,
+				12E6EB8C15ECFD030063D60A /* home-icon.png in Resources */,
+				12E6EB8D15ECFD030063D60A /* lab-icon.png in Resources */,
+				12E6EB8E15ECFD030063D60A /* puzzle-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +283,7 @@
 				127308DB15EC539700665551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
