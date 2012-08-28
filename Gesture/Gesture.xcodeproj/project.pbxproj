@@ -14,6 +14,7 @@
 		127308D215EC539700665551 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 127308D115EC539700665551 /* main.m */; };
 		127308D615EC539700665551 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 127308D515EC539700665551 /* AppDelegate.m */; };
 		127308DD15EC53A200665551 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127308DC15EC53A200665551 /* Storyboard.storyboard */; };
+		127308E015EC541D00665551 /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 127308DF15EC541D00665551 /* GestureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		127308D415EC539700665551 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		127308D515EC539700665551 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		127308DC15EC53A200665551 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		127308DE15EC541D00665551 /* GestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
+		127308DF15EC541D00665551 /* GestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				127308D515EC539700665551 /* AppDelegate.m */,
 				127308CC15EC539700665551 /* Supporting Files */,
 				127308DC15EC53A200665551 /* Storyboard.storyboard */,
+				127308DE15EC541D00665551 /* GestureViewController.h */,
+				127308DF15EC541D00665551 /* GestureViewController.m */,
 			);
 			path = Gesture;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 			files = (
 				127308D215EC539700665551 /* main.m in Sources */,
 				127308D615EC539700665551 /* AppDelegate.m in Sources */,
+				127308E015EC541D00665551 /* GestureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
