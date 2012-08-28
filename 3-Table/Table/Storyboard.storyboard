@@ -47,11 +47,11 @@
             </objects>
             <point key="canvasLocation" x="1115" y="69"/>
         </scene>
-        <!--View Controller - Detalhe-->
+        <!--Detalhe View Controller - Detalhe-->
         <scene sceneID="SBx-2m-c9H">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HTQ-vV-QMX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController title="Detalhe" id="Lg9-fK-lIk" sceneMemberID="viewController">
+                <viewController title="Detalhe" id="Lg9-fK-lIk" customClass="DetalheViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8GO-gR-Wwk">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -66,6 +66,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.83366593070652173" green="0.83366593070652173" blue="0.83366593070652173" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="SvC-03-qxC" id="szn-vq-fh3"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1540" y="69"/>
@@ -89,11 +92,6 @@
             <point key="canvasLocation" x="589" y="69"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="TabelaViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TabelaViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

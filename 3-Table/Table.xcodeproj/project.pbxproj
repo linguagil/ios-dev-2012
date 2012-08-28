@@ -15,6 +15,7 @@
 		12E6EBB015ED028B0063D60A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E6EBAF15ED028B0063D60A /* AppDelegate.m */; };
 		12E6EBBB15ED02DB0063D60A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E6EBBA15ED02DB0063D60A /* Storyboard.storyboard */; };
 		12E6EBC815ED12810063D60A /* TabelaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E6EBC715ED12810063D60A /* TabelaViewController.m */; };
+		12E6EBCB15ED54950063D60A /* DetalheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E6EBCA15ED54950063D60A /* DetalheViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		12E6EBBA15ED02DB0063D60A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		12E6EBC615ED12810063D60A /* TabelaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabelaViewController.h; sourceTree = "<group>"; };
 		12E6EBC715ED12810063D60A /* TabelaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabelaViewController.m; sourceTree = "<group>"; };
+		12E6EBC915ED54950063D60A /* DetalheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetalheViewController.h; sourceTree = "<group>"; };
+		12E6EBCA15ED54950063D60A /* DetalheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetalheViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				12E6EBBA15ED02DB0063D60A /* Storyboard.storyboard */,
 				12E6EBC615ED12810063D60A /* TabelaViewController.h */,
 				12E6EBC715ED12810063D60A /* TabelaViewController.m */,
+				12E6EBC915ED54950063D60A /* DetalheViewController.h */,
+				12E6EBCA15ED54950063D60A /* DetalheViewController.m */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 				12E6EBAC15ED028B0063D60A /* main.m in Sources */,
 				12E6EBB015ED028B0063D60A /* AppDelegate.m in Sources */,
 				12E6EBC815ED12810063D60A /* TabelaViewController.m in Sources */,
+				12E6EBCB15ED54950063D60A /* DetalheViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

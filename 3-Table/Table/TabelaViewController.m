@@ -7,6 +7,7 @@
 //
 
 #import "TabelaViewController.h"
+#import "DetalheViewController.h"
 
 @interface TabelaViewController ()
 
@@ -82,6 +83,12 @@
     cell.textLabel.text = [_lista objectAtIndex:indexPath.row];
     
     return cell;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    DetalheViewController *controller = (DetalheViewController *) segue.destinationViewController;
+    controller.item = [_lista objectAtIndex:self.tableView.indexPathForSelectedRow.row];
 }
 
 /*
