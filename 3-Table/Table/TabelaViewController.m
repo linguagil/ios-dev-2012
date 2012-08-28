@@ -37,6 +37,7 @@
 {
     [super viewDidLoad];
 
+    self.title = @"Lista";
     [self carregarLista];
 
     // Uncomment the following line to preserve selection between presentations.
