@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1203C01115EE47A2008254E6 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 1203C01015EE47A2008254E6 /* Item.m */; };
+		1203C01815EE4FB1008254E6 /* ItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1203C01715EE4FB1008254E6 /* ItemManager.m */; };
 		12E6EBA015ED028B0063D60A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E6EB9F15ED028B0063D60A /* UIKit.framework */; };
 		12E6EBA215ED028B0063D60A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E6EBA115ED028B0063D60A /* Foundation.framework */; };
 		12E6EBA415ED028B0063D60A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E6EBA315ED028B0063D60A /* CoreGraphics.framework */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		1203C00F15EE47A2008254E6 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		1203C01015EE47A2008254E6 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		1203C01615EE4FB1008254E6 /* ItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemManager.h; sourceTree = "<group>"; };
+		1203C01715EE4FB1008254E6 /* ItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemManager.m; sourceTree = "<group>"; };
 		12E6EB9B15ED028B0063D60A /* Table.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Table.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E6EB9F15ED028B0063D60A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		12E6EBA115ED028B0063D60A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -93,6 +96,8 @@
 				12E6EBCA15ED54950063D60A /* DetalheViewController.m */,
 				1203C00F15EE47A2008254E6 /* Item.h */,
 				1203C01015EE47A2008254E6 /* Item.m */,
+				1203C01615EE4FB1008254E6 /* ItemManager.h */,
+				1203C01715EE4FB1008254E6 /* ItemManager.m */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				12E6EBC815ED12810063D60A /* TabelaViewController.m in Sources */,
 				12E6EBCB15ED54950063D60A /* DetalheViewController.m in Sources */,
 				1203C01115EE47A2008254E6 /* Item.m in Sources */,
+				1203C01815EE4FB1008254E6 /* ItemManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

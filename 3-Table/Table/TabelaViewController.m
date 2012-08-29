@@ -8,7 +8,7 @@
 
 #import "TabelaViewController.h"
 #import "DetalheViewController.h"
-#import "Item.h"
+#import "ItemManager.h"
 
 @interface TabelaViewController ()
 
@@ -43,21 +43,7 @@
 
 - (void)carregarLista
 {
-    _lista = [[NSMutableArray alloc] init];
-    
-    Item *item;
-    
-    item = [[Item alloc] init];
-    item.nome = @"LinguÁgil 2012";
-    [_lista addObject:item];
-
-    item = [[Item alloc] init];
-    item.nome = @"iOS Dev Bahia";
-    [_lista addObject:item];
-
-    item = [[Item alloc] init];
-    item.nome = @"UCSal";
-    [_lista addObject:item];
+    _lista = [NSMutableArray arrayWithArray:[ItemManager obterTodos]];
 }
 
 - (void)viewDidLoad

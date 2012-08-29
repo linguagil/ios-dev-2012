@@ -7,6 +7,7 @@
 //
 
 #import "DetalheViewController.h"
+#import "ItemManager.h"
 
 @interface DetalheViewController ()
 
@@ -34,6 +35,7 @@
     Item *item = [[Item alloc] init];
     item.nome = self.campo.text;
     
+    [ItemManager persistirItem:item];
     [self.delegate adicionarItem:item];
     
     return YES;
