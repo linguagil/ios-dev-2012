@@ -13,5 +13,6 @@
 
 + (NSArray *)obterTodos;
 + (void)persistirItem:(Item *)item;
++ (void)removerItem:(Item *)item;
 
 @end

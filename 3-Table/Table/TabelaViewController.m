@@ -117,7 +117,11 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_lista removeObjectAtIndex:indexPath.row];
+        
+        Item *item = [_lista objectAtIndex:indexPath.row];
+        [ItemManager removerItem:item];
+        [_lista removeObject:item];
+
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
     else if (editingStyle == UITableViewCellEditingStyleInsert) {

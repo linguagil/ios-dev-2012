@@ -47,4 +47,20 @@
     [userDefaults synchronize];
 }
 
++ (void)removerItem:(Item *)item
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSMutableArray *dictionaries = [userDefaults objectForKey:@"itens"];
+    
+    if (dictionaries){
+        dictionaries = [dictionaries mutableCopy];
+        
+        NSDictionary *dictionary = [item dictionaryWithValuesForKeys:@[@"nome"]];
+        [dictionaries removeObject:dictionary];
+        
+        [userDefaults setValue:dictionaries forKey:@"itens"];
+        [userDefaults synchronize];
+    }
+}
+
 @end
