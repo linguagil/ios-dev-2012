@@ -8,11 +8,11 @@
 
 #import "TabelaViewController.h"
 #import "DetalheViewController.h"
+#import "Item.h"
 
 @interface TabelaViewController ()
 
 - (void)carregarLista;
-- (void)persistirItem:(NSString *)item;
 
 @end
 
@@ -27,31 +27,37 @@
     return self;
 }
 
-- (NSString *)itemSelecionado
+- (Item *)itemSelecionado
 {
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     return indexPath ? [_lista objectAtIndex:indexPath.row] : nil;
 }
 
-- (void)adicionarItem:(NSString *)item
+- (void)adicionarItem:(Item *)item
 {
-    [self persistirItem:item];
+    [_lista insertObject:item atIndex:0];
 
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:YES];
 }
 
-- (void)persistirItem:(NSString *)item
-{
-    [_lista insertObject:item atIndex:0];
-}
-
 - (void)carregarLista
 {
     _lista = [[NSMutableArray alloc] init];
-    [_lista addObject:@"LinguÁgil 2012"];
-    [_lista addObject:@"iOS Dev Bahia"];
-    [_lista addObject:@"UCSal"];
+    
+    Item *item;
+    
+    item = [[Item alloc] init];
+    item.nome = @"LinguÁgil 2012";
+    [_lista addObject:item];
+
+    item = [[Item alloc] init];
+    item.nome = @"iOS Dev Bahia";
+    [_lista addObject:item];
+
+    item = [[Item alloc] init];
+    item.nome = @"UCSal";
+    [_lista addObject:item];
 }
 
 - (void)viewDidLoad
@@ -100,7 +106,8 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    cell.textLabel.text = [_lista objectAtIndex:indexPath.row];
+    Item *item = [_lista objectAtIndex:indexPath.row];
+    cell.textLabel.text = item.nome;
     
     return cell;
 }

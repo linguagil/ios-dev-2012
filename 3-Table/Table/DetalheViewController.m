@@ -30,7 +30,11 @@
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [self.navigationController popViewControllerAnimated:YES];
-    [self.delegate adicionarItem:self.campo.text];
+    
+    Item *item = [[Item alloc] init];
+    item.nome = self.campo.text;
+    
+    [self.delegate adicionarItem:item];
     
     return YES;
 }
@@ -41,7 +45,7 @@
     
     if([self.delegate itemSelecionado]) {
         self.title = @"Detalhe";
-        self.label.text = [self.delegate itemSelecionado];
+        self.label.text = [self.delegate itemSelecionado].nome;
         self.campo.hidden = YES;
 
     } else {

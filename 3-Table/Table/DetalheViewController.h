@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Item.h"
 
 @protocol DetalheDelegate <NSObject>
 
-- (NSString *)itemSelecionado;
-- (void)adicionarItem:(NSString *)item;
+- (Item *)itemSelecionado;
+- (void)adicionarItem:(Item *)item;
 
 @end
 
