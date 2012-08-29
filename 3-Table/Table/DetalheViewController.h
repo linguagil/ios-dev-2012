@@ -18,7 +18,7 @@
 
 @interface DetalheViewController : UIViewController <UITextFieldDelegate>
 
-@property (weak, nonatomic) id<DetalheDelegate> delegate;
+@property (weak, nonatomic) id <DetalheDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UITextField *campo;
 
